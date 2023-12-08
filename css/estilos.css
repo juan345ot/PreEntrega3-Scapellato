@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300;400&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/*inicio navbar*/
+
+.navbar{
+    background-color: black;
+    color: orange;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-size: 30px;
+    padding: 5px;
+    text-shadow: 0 0 5px white;
+}
+
+.logo span {
+    font-size: 34px;
+}
+
+.navbar-toggler-icon {
+    color: orange;
+}
+
+.navbar-toggler{
+    background-color: orange;
+}
+
+.nav-link{
+    text-shadow: 0 0 5px white;
+}
+
+/*fin navbar*/
+
+/*inicio seccion index*/
+
+main{
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    background-image: url(../img/playstation-6689793_1280.jpg);
+    background-size: cover;
+    background-position:top left;
+}
+.call{
+    color: orange;
+    background-color: rgba(0, 0, 0,0.7);
+    border: solid 4px orange;
+    width: 40%;
+    float: right;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.call a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a:hover{
+    color: black;
+    font-weight: bold;
+}
+#sec1{
+    text-align: center;
+    color: orange;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 20px;
+    border:5px solid orange;
+}
+
+.sec{
+    background-color: black;
+    color: white;
+}
+
+/*fin seccion index*/
+
+/*inicio seccion nosotros*/
+
+#sec2{
+    text-align: center;
+    color: orange;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 20px;
+    border:5px solid orange;
+}
+
+.sec2 span{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.sec2{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+/*fin seccion nosotros*/
+
+/*inicio seccion consolas*/
+
+#sec3{
+    text-align: center;
+    color: orange;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 20px;
+    border:5px solid orange;
+}
+.sec3{
+    height: 1100px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+/*fin seccion consolas*/
+
+/*inicio seccion juegos*/
+#sec4{
+    text-align: center;
+    color: orange;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 20px;
+    border:5px solid orange;
+}
+.sec4s{
+    height: 1100px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+/*fin seccion juegos*/
+
+/*inicio seccion contacto*/
+
+.contacto{
+    background-color: orange;
+    font-size: 20px;
+    color: black;
+}
+
+.contacto form{
+    text-align: center;
+}
+
+.contacto label{
+    padding: 30px;
+}
+.contacto p{
+    text-align: center;
+}
+/* fin seccion contacto*/
+
+.card{/*cartas*/
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#card2 .card-title{ /*titulo card2*/
+    padding-top: 65px;
+}
+
+/* inicio footer*/
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: orange;
+    border:5px solid orange;
+    font-size: 24px;
+    padding: 20px;
+    }
+
+#pFooter{
+    font-size: 34px;
+}
+    
+#pFooter span{
+color: white;
+}
+    
+#pFooter1{
+color: #333;
+}
+    
+#pFooter2{
+color: white;
+}
+.footer a{/*footer enlaces*/
+color: orange;
+text-decoration: none;
+font-size: 50px;
+letter-spacing: 20px;
+}
+    
+.footer a:hover{
+color: white;
+}
+
+/* fin footer*/
+
+.subir{/*icono subir*/
+    height: 40px;
+    width: 40px;
+    background-color:orange;
+    color: black;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+    
+.whatsapp{ /*icono whatsapp*/
+    height: 40px;
+    width: 40px;
+    background-color:orange;
+    color: black;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+}
+
+/* inicio barra de navegacion*/
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: gray;        
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+/* fin barra de navegacion*/
+
+/* medias quary*/
+
+@media only screen and (max-width: 768px) {
+
+    main{
+        height: auto;
+    }
+
+    .call{
+        width: auto;
+    }
+}

@@ -1,0 +1,35 @@
+.footer {
+    text-align: center;
+    background-color: $background-color;
+    color: $orange-color;
+    border: 5px solid $orange-color;
+    font-size: 24px;
+    padding: 20px;
+
+    #pFooter {
+        font-size: 34px;
+
+        span {
+            color: white;
+        }
+    }
+
+    #pFooter1 {
+        color: #333;
+    }
+
+    #pFooter2 {
+        color: white;
+    }
+
+    a {
+        color: $orange-color;
+        text-decoration: none;
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+
+    a:hover {
+        color: white;
+    }
+}

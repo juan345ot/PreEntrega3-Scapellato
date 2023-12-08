@@ -1,0 +1,29 @@
+//navbar
+.navbar {
+    background-color: $background-color;
+    color: $orange-color;
+    font-size: 22px;
+    font-family: $font-family;
+
+    .logo {
+        font-size: 30px;
+        padding: 5px;
+        text-shadow: 0 0 5px white;
+
+        span {
+            font-size: 34px;
+        }
+    }
+
+    .navbar-toggler-icon {
+        color: $orange-color;
+    }
+
+    .navbar-toggler {
+        background-color: $orange-color;
+    }
+
+    .nav-link {
+        text-shadow: 0 0 5px white;
+    }
+}

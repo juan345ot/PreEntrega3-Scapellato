@@ -1,0 +1,41 @@
+main {
+    height: 800px;
+    width: 100%;
+    background-color: $background-color;
+    background-image: url(../img/playstation-6689793_1280.jpg);
+    background-size: cover;
+    background-position: top left;
+}
+
+.call {
+    color: $orange-color;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 4px $orange-color;
+    width: 40%;
+    float: right;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+    a {
+        @extend .card-link;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a:hover {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+#sec1 {
+    @include section-style($orange-color);
+}
+
+.sec {
+    background-color: $background-color;
+    color: white;
+}

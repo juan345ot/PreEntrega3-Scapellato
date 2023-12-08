@@ -1,0 +1,13 @@
+// Estilos de la barra de desplazamiento
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $orange-color;
+    border-radius: 10px;
+}

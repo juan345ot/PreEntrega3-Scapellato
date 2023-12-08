@@ -1,0 +1,45 @@
+
+// Import de fuentes
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300;400&display=swap');
+
+// Variables y Mixins
+@import "./_variables";
+// Estilos globales
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    background-color: $background-color;
+}
+
+// Estilos de la barra de desplazamiento
+@import "./scrollbar";
+// Navbar
+@import "./navbar";
+// Sección index
+@import "./index";
+// Sección nosotros
+@import "./nosotros";
+// Sección consolas
+@import "./consolas";
+// Sección juegos
+@import "./juegos";
+// Sección contacto
+@import "./contacto";
+// Cartas
+@import "./cards";
+// Footer
+@import "./footer";
+// Iconos
+@import "./iconos";
+// Media queries
+@media only screen and (max-width: 768px) {
+    main {
+        height: auto;
+    }
+
+    .call {
+        width: auto;
+    }
+}

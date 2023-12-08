@@ -1,0 +1,10 @@
+#sec4 {
+    @include section-style($orange-color);
+}
+
+.sec4s {
+    height: 1100px;
+    background-color: $background-color;
+    padding: 20px;
+    color: white;
+}

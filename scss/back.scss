@@ -1,0 +1,272 @@
+// Variables
+$font-family: 'Poppins',
+sans-serif;
+$background-color: black;
+$orange-color: orange;
+
+// Mixins
+@mixin section-style($color) {
+    text-align: center;
+    color: $color;
+    background-color: $background-color;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 5px solid $color;
+}
+
+@mixin card-style() {
+    background-color: $orange-color;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+// Import de fuentes
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300;400&display=swap');
+
+// Estilos globales
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    background-color: $background-color;
+}
+
+// Estilos de la barra de desplazamiento
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $orange-color;
+    border-radius: 10px;
+}
+
+// Navbar
+.navbar {
+    background-color: $background-color;
+    color: $orange-color;
+    font-size: 22px;
+    font-family: $font-family;
+
+    .logo {
+        font-size: 30px;
+        padding: 5px;
+        text-shadow: 0 0 5px white;
+
+        span {
+            font-size: 34px;
+        }
+    }
+
+    .navbar-toggler-icon {
+        color: $orange-color;
+    }
+
+    .navbar-toggler {
+        background-color: $orange-color;
+    }
+
+    .nav-link {
+        text-shadow: 0 0 5px white;
+    }
+}
+
+// Sección index
+main {
+    height: 800px;
+    width: 100%;
+    background-color: $background-color;
+    background-image: url(../img/playstation-6689793_1280.jpg);
+    background-size: cover;
+    background-position: top left;
+}
+
+.call {
+    color: $orange-color;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 4px $orange-color;
+    width: 40%;
+    float: right;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+    a {
+        @extend .card-link;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a:hover {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+#sec1 {
+    @include section-style($orange-color);
+}
+
+.sec {
+    background-color: $background-color;
+    color: white;
+}
+
+// Sección nosotros
+#sec2 {
+    @include section-style($orange-color);
+
+    span {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.sec2 {
+    background-color: $background-color;
+    padding: 20px;
+    color: white;
+}
+
+// Sección consolas
+#sec3 {
+    @include section-style($orange-color);
+}
+
+.sec3 {
+    height: 1100px;
+    background-color: $background-color;
+    padding: 20px;
+    color: white;
+}
+
+// Sección juegos
+#sec4 {
+    @include section-style($orange-color);
+}
+
+.sec4s {
+    height: 1100px;
+    background-color: $background-color;
+    padding: 20px;
+    color: white;
+}
+
+// Sección contacto
+.contacto {
+    background-color: $orange-color;
+    font-size: 20px;
+    color: black;
+
+    form {
+        text-align: center;
+    }
+
+    label {
+        padding: 30px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.card-link {
+    text-decoration: none;
+    color: white;
+    background-color: $orange-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.card-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+// Cartas
+.card {
+    @include card-style();
+
+    #card2 .card-title {
+        padding-top: 65px;
+    }
+}
+
+// Footer
+.footer {
+    text-align: center;
+    background-color: $background-color;
+    color: $orange-color;
+    border: 5px solid $orange-color;
+    font-size: 24px;
+    padding: 20px;
+
+    #pFooter {
+        font-size: 34px;
+
+        span {
+            color: white;
+        }
+    }
+
+    #pFooter1 {
+        color: #333;
+    }
+
+    #pFooter2 {
+        color: white;
+    }
+
+    a {
+        color: $orange-color;
+        text-decoration: none;
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+// Iconos
+.subir,
+.whatsapp {
+    height: 40px;
+    width: 40px;
+    background-color: $orange-color;
+    color: black;
+    position: fixed;
+    right: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    bottom: 60px; // Posicionamiento específico para .subir
+}
+
+.whatsapp {
+    bottom: 10px; // Posicionamiento específico para .whatsapp
+}
+
+
+// Media queries
+@media only screen and (max-width: 768px) {
+    main {
+        height: auto;
+    }
+
+    .call {
+        width: auto;
+    }
+}

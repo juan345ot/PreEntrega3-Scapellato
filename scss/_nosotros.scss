@@ -1,0 +1,14 @@
+#sec2 {
+    @include section-style($orange-color);
+
+    span {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.sec2 {
+    background-color: $background-color;
+    padding: 20px;
+    color: white;
+}

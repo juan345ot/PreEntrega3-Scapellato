@@ -1,0 +1,19 @@
+$font-family: 'Poppins', sans-serif;
+$background-color: black;
+$orange-color: orange;
+
+@mixin section-style($color) {
+    text-align: center;
+    color: $color;
+    background-color: $background-color;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 5px solid $color;
+}
+
+@mixin card-style() {
+    background-color: $orange-color;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

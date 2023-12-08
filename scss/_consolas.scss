@@ -1,0 +1,10 @@
+#sec3 {
+    @include section-style($orange-color);
+}
+
+.sec3 {
+    height: 1100px;
+    background-color: $background-color;
+    padding: 20px;
+    color: white;
+}
